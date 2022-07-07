@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Form, Col, Row, FormGroup, Label, Input, Button, Container} from "reactstrap";
 import axios from "axios";
+import baseURL from "../../apis/apiCon";
 
 const AddUsers = () => {
     const [empData, setEmpData] = useState({
@@ -23,7 +24,7 @@ const AddUsers = () => {
     // console.log(empData); //for debugging purpose
     const subEmployee = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:8080/add-employee', {
+        axios.post(`${baseURL}/add-employee`, {
             employeeEmail: empData.employeeEmail,
             employeeName: empData.employeeName,
             employeeDesignation:empData.employeeDesignation,
