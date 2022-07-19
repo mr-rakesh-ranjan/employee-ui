@@ -11,6 +11,7 @@ import Contact from './components/pages/Contact';
 import Navbar from './components/layout/Navbar';
 import Error from './components/pages/Error';
 import AddUsers from "./components/users/addUsers";
+import ShowUser from './components/users/showUser';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/about" element={<About/>} />
           <Route exact path="/contact" element={<Contact/>} />
           <Route exact path="/add-employee" element={<AddUsers/>} />
+          <Route exact path="/get-employee" element={<ShowUser/>} />
           <Route element={<Error/>} />
         </Routes>
       </Container>
