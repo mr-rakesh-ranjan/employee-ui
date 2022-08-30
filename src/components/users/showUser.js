@@ -11,7 +11,7 @@ const ShowUser = (props) => {
 
     const getEmployeeDetail = (empId) => {
         try {
-            const response = axios.get( `${baseURL}/${empId}`);
+            const response = axios.get( `${baseURL}/employee/${empId}`);
             if (response) {
                 if(response.data){
                     setEmployeeData(response.data);
@@ -33,6 +33,9 @@ const ShowUser = (props) => {
 
     return (
     <>
+        <div className="conatiner">
+            <p>this is show user page </p>
+        </div>
 
     </>
     )

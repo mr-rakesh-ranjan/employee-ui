@@ -38,6 +38,11 @@ const Users = () => {
     }
 
     // get employee details handler
+    const getDetailsEmployee = (employeeId) => {
+        
+    }
+
+    // update employee details handler
     
     return (
         <>
@@ -67,7 +72,7 @@ const Users = () => {
                                 <td>{empData[key].employeeDesignation}</td>
                                 <td>{empData[key].employeeTeam}</td>
                                 <td>
-                                    <a className="btn btn-secondary m-lg-1" href="/get-employee" role="button">Details</a>
+                                    <a className="btn btn-secondary m-lg-1"  role="button" href="get-employee" /*onClick={() => getDetailsEmployee(empData[key].employeeId)}*/>Details</a>
                                     <a className="btn btn-warning m-lg-1" href="#" role="button">Edit</a>
                                     <button className="btn btn-danger m-lg-1" onClick={() => deleteEmployee(empData[key].employeeId)} role="button">Delete</button>
                                 </td>
